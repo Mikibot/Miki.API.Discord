@@ -10,9 +10,9 @@ using Newtonsoft.Json;
 namespace Miki.WebAPI.Discord.Controllers
 {
 	[BasicAuthentication]
-    [Route("api")]
-    public class DiscordController : Controller
-    {
+	[Route("api")]
+	public class DiscordController : Controller
+	{
 		internal static DiscordClient client;
 
 		[HttpPost("users/{userid}/messages")]
@@ -20,7 +20,7 @@ namespace Miki.WebAPI.Discord.Controllers
 		{
 			DiscordChannel channel = await client.CreateDMAsync(userid);
 
-			if(channel == null)
+			if (channel == null)
 			{
 				return new NotFoundResult();
 			}
