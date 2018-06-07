@@ -20,6 +20,8 @@ namespace Miki.WebAPI.Discord
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .Build();
+				.UseKestrel()
+				.UseUrls("http://*:1256")
+				.Build();
     }
 }
