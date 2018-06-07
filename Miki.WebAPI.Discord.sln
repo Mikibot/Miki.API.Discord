@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Miki.WebAPI.Discord", "Miki.WebAPI.Discord\Miki.WebAPI.Discord.csproj", "{26437E2A-00F1-4981-9F27-5B4A9E6A25DD}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Miki.Discord", "D:\Projects\Miki.Discord\Miki.Discord.csproj", "{B89A0DAC-6204-4418-AAA8-755C8F34D5CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Miki.AspNetCore", "Miki.AspNetCore\Miki.AspNetCore.csproj", "{77416642-5EB8-464E-B81C-146841B97D91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Miki.AspNetCore", "Miki.AspNetCore\Miki.AspNetCore.csproj", "{77416642-5EB8-464E-B81C-146841B97D91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Miki.API.Discord", "Miki.API.Discord\Miki.API.Discord.csproj", "{69922C6D-1EEA-4084-9F15-208FB8719245}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{26437E2A-00F1-4981-9F27-5B4A9E6A25DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{26437E2A-00F1-4981-9F27-5B4A9E6A25DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26437E2A-00F1-4981-9F27-5B4A9E6A25DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{26437E2A-00F1-4981-9F27-5B4A9E6A25DD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B89A0DAC-6204-4418-AAA8-755C8F34D5CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B89A0DAC-6204-4418-AAA8-755C8F34D5CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B89A0DAC-6204-4418-AAA8-755C8F34D5CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{77416642-5EB8-464E-B81C-146841B97D91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77416642-5EB8-464E-B81C-146841B97D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77416642-5EB8-464E-B81C-146841B97D91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69922C6D-1EEA-4084-9F15-208FB8719245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69922C6D-1EEA-4084-9F15-208FB8719245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69922C6D-1EEA-4084-9F15-208FB8719245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69922C6D-1EEA-4084-9F15-208FB8719245}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
