@@ -17,11 +17,18 @@ namespace Miki.WebAPI.Discord
             BuildWebHost(args).Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-				.UseKestrel()
-				.UseUrls("http://*:1256")
+		public static IWebHost BuildWebHost(string[] args)
+		{
+			IConfigurationRoot root = new ConfigurationBuilder()
+				.AddJsonFile("appsettings.json")
 				.Build();
+
+			return WebHost.CreateDefaultBuilder(args)
+				.UseStartup<Startup>()
+				.UseKestrel()
+				.UseUrls(root.GetValue<string>("urls"))
+				.UseConfiguration(root)
+				.Build();
+		}
     }
 }
