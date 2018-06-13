@@ -54,7 +54,8 @@ namespace Miki.WebAPI.Discord
 					{
 						Host = "127.0.0.1"
 					}
-				}
+				},
+				Password = Configuration.GetValue<string>("redis_password")
 			}));
 
 			app.UseMvc();
